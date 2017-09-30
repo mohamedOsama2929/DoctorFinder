@@ -8,10 +8,8 @@ import android.view.View;
 public class SignUpGeneral extends AppCompatActivity {
 
     public void Go(View view){
-
         Intent intent = new Intent(this, SignUpAsDoctor.class);
         startActivity(intent);
-
     }
 
     @Override
