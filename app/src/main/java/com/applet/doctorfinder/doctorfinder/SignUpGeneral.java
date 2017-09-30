@@ -11,6 +11,7 @@ public class SignUpGeneral extends AppCompatActivity {
 
         Intent intent = new Intent(this, SignUpAsDoctor.class);
         startActivity(intent);
+
     }
 
     @Override
