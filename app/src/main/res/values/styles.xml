@@ -13,6 +13,14 @@
     </style>
 
     <style name="signINstyle">
-        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="homeButtonStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorHomeText</item>
+        <item name="android:paddingStart">60dp</item>
     </style>
 </resources>

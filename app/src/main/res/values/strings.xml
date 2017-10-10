@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Doctor Finder</string>
     <string name="user_name">user name</string>
+    <string name="all_specialities">All specialities</string>
+    <string name="sub_specialities">Sub specialities</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="priceRange">Price Range</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="find_doctor">Find Doctor</string>
 
 </resources>
