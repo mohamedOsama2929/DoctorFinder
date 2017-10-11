@@ -1,9 +1,11 @@
-package com.applet.doctorfinder.doctorfinder;
+package com.applet.doctorfinder.doctorfinder.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.applet.doctorfinder.doctorfinder.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

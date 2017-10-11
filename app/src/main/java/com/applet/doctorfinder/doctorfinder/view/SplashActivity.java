@@ -1,4 +1,4 @@
-package com.applet.doctorfinder.doctorfinder;
+package com.applet.doctorfinder.doctorfinder.view;
 
 import android.content.Intent;
 import android.os.Bundle;

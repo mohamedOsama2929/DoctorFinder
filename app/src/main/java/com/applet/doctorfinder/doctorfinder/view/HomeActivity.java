@@ -1,10 +1,12 @@
-package com.applet.doctorfinder.doctorfinder;
+package com.applet.doctorfinder.doctorfinder.view;
 
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+
+import com.applet.doctorfinder.doctorfinder.R;
 
 public class HomeActivity extends ActionBarActivity {
 
