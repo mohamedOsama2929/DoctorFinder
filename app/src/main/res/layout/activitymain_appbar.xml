@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.applet.doctorfinder.doctorfinder.HomeActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -44,7 +46,7 @@
 
         <fragment
             android:id="@+id/draw"
-            android:name="com.example.monko.navigationbar.BlankFragment"
+            android:name="com.applet.doctorfinder.doctorfinder.navFragment"
             android:layout_width="@dimen/nav_bar"
             android:layout_height="match_parent"
             android:layout_gravity="start"
@@ -52,7 +54,6 @@
             tools:layout="@layout/nav_doctor">
 
         </fragment>
-
 
     </android.support.v4.widget.DrawerLayout>
 
