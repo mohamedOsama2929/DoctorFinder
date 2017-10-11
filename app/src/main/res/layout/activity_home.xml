@@ -183,7 +183,7 @@
     </ScrollView>
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@drawable/down"
         app:layout_constraintBottom_toBottomOf="parent"

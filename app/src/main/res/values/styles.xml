@@ -23,4 +23,5 @@
         <item name="android:textColor">@color/colorHomeText</item>
         <item name="android:paddingStart">60dp</item>
     </style>
+
 </resources>

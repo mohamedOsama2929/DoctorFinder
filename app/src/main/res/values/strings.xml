@@ -8,5 +8,9 @@
     <string name="priceRange">Price Range</string>
     <string name="doctor_name">Doctor Name</string>
     <string name="find_doctor">Find Doctor</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>
