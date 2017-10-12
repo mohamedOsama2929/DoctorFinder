@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_a">
+
+    <ImageView
+        android:id="@+id/signUpDoctorBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_up_doctor_bg" />
+
+    <ImageButton
+        android:id="@+id/arrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_right"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sign_up_doctor_title"
+        android:layout_alignTop="@+id/arrowRight"/>
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/full_name"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Full Name"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/signUpDoctorBg"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/password"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/fullName"
+        android:textColor="#000000"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/postalCode"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="+20"
+        android:layout_alignBottom="@+id/mobileNumber"
+        android:drawableRight="@drawable/arrow_down"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/password"
+        android:textColor="#000000"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Mobile Number"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/mobile_number"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/password"
+        android:textColor="#000000"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/email_address"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Email Address"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/mobileNumber"
+        android:textColor="#000000"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/doctorSpeciality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/doctor_speciality"
+        android:drawableRight="@drawable/arrow_angle"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Doctor Speciality"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/emailAddress"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/doctorSubSpeciality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/doctor_speciality"
+        android:drawableRight="@drawable/arrow_angle"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Doctor Sub Speciality"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/doctorSpeciality"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/doctorCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/doctor_city"
+        android:drawableRight="@drawable/arrow_angle"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Doctor City"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/doctorSubSpeciality"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/doctorArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/doctor_city"
+        android:drawableRight="@drawable/arrow_angle"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Doctor Area"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/doctorCity"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/clinicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="#A9A9A9"
+        android:drawableLeft="@drawable/clinic_name"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:hint="Clinic Name"
+        android:textColorHint="#A9A9A9"
+        android:layout_below="@+id/doctorArea"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:id="@+id/signUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clinicName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sign_up_button"/>
+
+</RelativeLayout>

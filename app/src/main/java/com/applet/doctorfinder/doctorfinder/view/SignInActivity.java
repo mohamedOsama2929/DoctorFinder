@@ -25,4 +25,11 @@ public class SignInActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    @OnClick(R.id.image_signup)
+    public void signup(View view) {
+        Intent intent = new Intent(this,SignUpGeneral.class);
+        startActivity(intent);
+
+    }
 }
