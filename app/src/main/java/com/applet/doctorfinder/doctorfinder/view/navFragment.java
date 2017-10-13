@@ -39,14 +39,12 @@ public class navFragment extends Fragment {
         return doctor;
         else
             return visitor;
-
-
     }
 
-    public void setUP(DrawerLayout drawerLayput, Toolbar toolBar) {
+    public void setUP(DrawerLayout drawerLayput) {
 
         mDrawerLayout = drawerLayput;
-        mDrawerToggle=new ActionBarDrawerToggle(getActivity(),drawerLayput,toolBar,R.string.drawer_open,R.string.drawer_close){
+        mDrawerToggle=new ActionBarDrawerToggle(getActivity(),drawerLayput,R.string.drawer_open,R.string.drawer_close){
 
             @Override
             public void onDrawerOpened(View drawerView) {
@@ -56,6 +54,8 @@ public class navFragment extends Fragment {
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
+
+
             }
 
         };

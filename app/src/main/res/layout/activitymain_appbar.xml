@@ -9,28 +9,7 @@
     android:orientation="vertical"
     tools:context="com.applet.doctorfinder.doctorfinder.view.HomeActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Doctor Finder"
-                android:textColor="#ffffff"
-                android:textSize="18sp" />
-        </android.support.v7.widget.Toolbar>
-
-    </android.support.design.widget.AppBarLayout>
 
 
     <android.support.v4.widget.DrawerLayout

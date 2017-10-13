@@ -21,6 +21,7 @@ public class SignInActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_signin)
     public void signIn(View view) {
+
         Intent intent = new Intent(this,HomeActivity.class);
         startActivity(intent);
 
