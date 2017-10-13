@@ -17,6 +17,12 @@ public class SignUpGeneral extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void signpatient(View view){
+
+        Intent intent = new Intent(this,SignUpAsPatient.class);
+        startActivity(intent);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

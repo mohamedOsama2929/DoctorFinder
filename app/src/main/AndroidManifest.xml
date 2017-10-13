@@ -20,13 +20,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.HomeActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".view.SignUpGeneral" android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".view.SignUpAsDoctor" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".view.SignInActivity" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".view.SignUpGeneral"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".view.SignUpAsDoctor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".view.SignInActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".view.SignUpAsPatient" />
+        <activity android:name=".view.doctorprofile"></activity>
     </application>
 
 </manifest>

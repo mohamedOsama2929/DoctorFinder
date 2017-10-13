@@ -1,6 +1,7 @@
 package com.applet.doctorfinder.doctorfinder.view;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.applet.doctorfinder.doctorfinder.R;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 /**
@@ -32,9 +35,37 @@ public class navFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
         View doctor = inflater.inflate(R.layout.nav_doctor, container, false);
         View visitor =inflater.inflate(R.layout.nav_visitor,container,false);
+
+        CircleImageView circleImageView=(CircleImageView)doctor.findViewById(R.id.circleImageView);
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                    Intent intent = new Intent(getContext(),doctorprofile.class);
+                    startActivity(intent);
+
+
+
+            }
+        });
+        CircleImageView vist=(CircleImageView)visitor.findViewById(R.id.circleImageView);
+        vist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getContext(),doctorprofile.class);
+                startActivity(intent);
+
+
+
+            }
+        });
+
         if (!doc)
         return doctor;
         else
