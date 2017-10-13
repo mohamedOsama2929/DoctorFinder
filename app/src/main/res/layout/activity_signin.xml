@@ -66,6 +66,7 @@
         android:background="@drawable/sign_inbutton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:onClick="open"
         app:layout_constraintTop_toBottomOf="@+id/image_forgetpassword" />
 
     <ImageView

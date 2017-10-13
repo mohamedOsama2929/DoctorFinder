@@ -14,6 +14,7 @@ import java.util.Calendar;
 
 public  class DatePickerFragment extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {
+    String dat;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -29,5 +30,7 @@ public  class DatePickerFragment extends DialogFragment
     }
 
     public void onDateSet(DatePicker view, int year, int month, int day) {
+         dat=day +"/"+month+"/"+year;
+        doctorprofile.dayche=dat;
     }
 }

@@ -117,16 +117,16 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText5"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/birthdate"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:focusable="false"
         android:hint="Birth Date"
         android:inputType="textPersonName"
         android:onClick="showDatePickerDialog"
-        android:textSize="20sp"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/birthdate"/>
+        android:textSize="20sp" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
