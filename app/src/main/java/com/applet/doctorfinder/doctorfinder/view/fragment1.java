@@ -13,7 +13,7 @@ import com.applet.doctorfinder.doctorfinder.R;
  * Created by doyde on 10/11/2017.
  */
 
-class fragment1 extends Fragment {
+public class fragment1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
