@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/docbackground"
+    android:background="@drawable/background_home"
     tools:context="com.applet.doctorfinder.doctorfinder.view.doctorprofile">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
