@@ -30,10 +30,10 @@
             android:name=".view.SignUpAsDoctor"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".view.SignInActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:name=".view.SignInActivity"></activity>
         <activity android:name=".view.SignUpAsPatient" />
         <activity android:name=".view.doctorprofile"></activity>
+        <activity android:name=".view.SearchResults"></activity>
     </application>
 
 </manifest>

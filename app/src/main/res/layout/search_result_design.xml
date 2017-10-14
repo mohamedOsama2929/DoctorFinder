@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/background2"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/doctorImage"
+            android:text="Doctor Ahmed Mohamed"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/doctorStudy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/doctorName"
+            android:layout_below="@+id/doctorName"
+            android:layout_toRightOf="@+id/doctorImage"
+            android:text="Medical Professor in the university of melbourne,Australia"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/doctorImage"
+            android:layout_alignRight="@+id/doctorName"
+            android:layout_toRightOf="@+id/doctorImage"
+            android:background="@drawable/rating4" />
+
+        <ImageView
+            android:id="@+id/specializedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctorImage"
+            android:layout_below="@+id/doctorImage"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clinic_name" />
+
+        <ImageView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctorImage"
+            android:layout_alignRight="@+id/specializedIn"
+            android:layout_below="@+id/specializedIn"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/doctor_city" />
+
+        <ImageView
+            android:id="@+id/fees"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/doctorImage"
+            android:layout_alignRight="@+id/specializedIn"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fees" />
+
+        <ImageView
+            android:id="@+id/WaitingHours"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/doctorImage"
+            android:layout_alignRight="@+id/specializedIn"
+            android:layout_below="@+id/fees"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/time" />
+
+        <TextView
+            android:id="@+id/specializedInTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/specializedIn"
+            android:layout_alignTop="@+id/specializedIn"
+            android:layout_below="@id/rating"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/specializedIn"
+            android:text="Specilized in : Plastic,Surgery"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/addressTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/address"
+            android:layout_alignTop="@+id/address"
+            android:layout_below="@id/specializedInTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/address"
+            android:text="Address : Blvd,Kukulcan,11.5,Hotel Zone"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/feesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/feesTxt"
+            android:layout_alignTop="@+id/fees"
+            android:layout_below="@id/addressTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/fees"
+            android:text="Fees : 50 $"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/WaitingHours"
+            android:layout_alignTop="@+id/WaitingHours"
+            android:layout_below="@id/feesTxt"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/WaitingHours"
+            android:text="Waiting Time : 50 Minutes"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/theBookBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/WaitingHours"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/theProfileBtn"
+            android:background="@drawable/button"
+            android:text="Book Doctor"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/theProfileBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/WaitingHours"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:text="Doctor Profile"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
