@@ -43,6 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_alignBottom="@+id/doctorImage"
+            android:layout_below="@+id/doctorStudy"
             android:layout_alignRight="@+id/doctorName"
             android:layout_toRightOf="@+id/doctorImage"
             android:background="@drawable/rating4" />
