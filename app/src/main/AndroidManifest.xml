@@ -16,6 +16,7 @@
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,15 +30,10 @@
             android:name=".view.SignUpAsDoctor"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".view.SignInActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:name=".view.SignInActivity"></activity>
         <activity android:name=".view.SignUpAsPatient" />
         <activity android:name=".view.doctorprofile"></activity>
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-             />
-        <activity android:name=".view.SignUpGeneral" android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".view.SignUpAsDoctor" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
-        <activity android:name=".view.SignInActivity" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".view.SearchResults"></activity>
     </application>
 
 </manifest>
