@@ -36,14 +36,15 @@
             android:layout_below="@+id/doctorName"
             android:layout_toRightOf="@+id/doctorImage"
             android:text="Medical Professor in the university of melbourne,Australia"
-            android:textSize="11dp" />
+            android:textSize="10dp" />
 
         <ImageView
             android:id="@+id/rating"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/doctorImage"
             android:layout_below="@+id/doctorStudy"
+            android:layout_marginTop="15dp"
             android:layout_alignRight="@+id/doctorName"
             android:layout_toRightOf="@+id/doctorImage"
             android:background="@drawable/rating4" />
