@@ -6,12 +6,35 @@
     android:layout_height="match_parent"
     tools:context="com.applet.doctorfinder.doctorfinder.view.SearchResults">
 
+    <ImageView
+        android:id="@+id/signUpDoctorBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_up_doctor_bg" />
+
+    <ImageButton
+        android:id="@+id/arrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_right"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/find_a_doctor_title"
+        android:layout_alignTop="@+id/arrowRight"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:background="@drawable/background3">
+        android:background="@drawable/background3"
+        android:layout_below="@id/signUpDoctorBg"
+        android:paddingTop="10dp">
 
     </android.support.v7.widget.RecyclerView>
 
