@@ -72,10 +72,10 @@ public class navFragment extends Fragment {
             return visitor;
     }
 
-    public void setUP(DrawerLayout drawerLayput) {
+    public void setUP(DrawerLayout drawerLayput,Toolbar toolBar) {
 
         mDrawerLayout = drawerLayput;
-        mDrawerToggle=new ActionBarDrawerToggle(getActivity(),drawerLayput,R.string.drawer_open,R.string.drawer_close){
+        mDrawerToggle=new ActionBarDrawerToggle(getActivity(),drawerLayput,toolBar,R.string.drawer_open,R.string.drawer_close){
 
             @Override
             public void onDrawerOpened(View drawerView) {
@@ -91,6 +91,7 @@ public class navFragment extends Fragment {
 
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
 
 
     }
