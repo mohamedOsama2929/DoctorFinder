@@ -2,6 +2,7 @@ package com.applet.doctorfinder.doctorfinder.view;
 
 import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -40,6 +41,14 @@ public class doctorprofile extends AppCompatActivity {
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
         toolbar.setLogo(R.drawable.arrow);
 
+        View view = toolbar.getChildAt(1);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         daycheck=(TextView)findViewById(R.id.calender);

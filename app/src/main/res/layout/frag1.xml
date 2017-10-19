@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/infoground"
     android:orientation="vertical">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/docinfo1"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20sp"
         android:layout_marginTop="10sp"
-        />
+        android:src="@drawable/docinfo1" />
 
     <TextView
         android:id="@+id/textView16"
@@ -23,7 +30,7 @@
         android:layout_marginStart="10dp"
         android:layout_toEndOf="@+id/imageView6"
         android:text="Specialized in:"
-      android:textSize="16dp"/>
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textView17"
@@ -36,14 +43,14 @@
         android:text="Plastic,Reconstructiv and Aesthic " />
 
     <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView6"
         android:layout_alignParentTop="@+id/imageView6"
+        android:layout_below="@+id/imageView6"
         android:layout_marginStart="20sp"
         android:layout_marginTop="14dp"
-        android:src="@drawable/adrees"
-        android:id="@+id/imageView7" />
+        android:src="@drawable/adrees" />
 
     <TextView
         android:id="@+id/textView18"
@@ -52,7 +59,7 @@
         android:layout_alignStart="@+id/textView16"
         android:layout_alignTop="@+id/imageView7"
         android:text="Adress:"
-        android:textSize="16dp"/>
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textView19"
@@ -62,15 +69,16 @@
         android:layout_marginStart="4dp"
         android:layout_toEndOf="@+id/textView18"
         android:text="Blvd kukulan km 11.5,hotelzone,7750" />
+
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView7"
         android:layout_marginStart="20sp"
-        android:src="@drawable/fees"
         android:layout_marginTop="14dp"
 
-        android:id="@+id/imageView8" />
+        android:src="@drawable/fees" />
 
     <TextView
         android:id="@+id/textView20"
@@ -79,7 +87,7 @@
         android:layout_alignBottom="@+id/imageView8"
         android:layout_alignStart="@+id/textView18"
         android:text="Fees:"
-        android:textSize="16dp"/>
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textView21"
@@ -89,15 +97,17 @@
         android:layout_marginStart="4dp"
         android:layout_toEndOf="@+id/textView20"
         android:text="50$" />
+
     <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView8"
         android:layout_marginStart="20sp"
-        android:src="@drawable/waitingtime"
         android:layout_marginTop="14dp"
 
-        android:id="@+id/imageView9" />
+        android:src="@drawable/waitingtime" />
+
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
@@ -105,7 +115,7 @@
         android:layout_alignBottom="@+id/imageView9"
         android:layout_alignStart="@+id/textView20"
         android:text="Waiting Time:"
-        android:textSize="16dp"/>
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/textView23"
@@ -115,15 +125,16 @@
         android:layout_marginStart="4dp"
         android:layout_toEndOf="@+id/textView22"
         android:text="50 Minuts" />
+
     <ImageView
+        android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView9"
         android:layout_marginStart="20sp"
-        android:src="@drawable/master"
         android:layout_marginTop="14dp"
 
-        android:id="@+id/imageView10" />
+        android:src="@drawable/master" />
 
     <TextView
         android:id="@+id/textView24"
@@ -131,8 +142,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView10"
         android:layout_alignStart="@+id/textView22"
-        android:text="Master of oral@maxillo-facial surgery-stanford"
-         />
-
-
+        android:text="Master of oral@maxillo-facial surgery-stanford" />
+    </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.applet.doctorfinder.doctorfinder.view;
 
 import android.app.DialogFragment;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -24,6 +25,14 @@ public class SignUpAsPatient extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_as_patient);
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
         toolbar.setLogo(R.drawable.arrow);
+        View view = toolbar.getChildAt(1);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),SignUpGeneral.class);
+                startActivity(intent);
+            }
+        });
 
         ArrayList<String> data=new ArrayList<String>();
         data.add("+98");
