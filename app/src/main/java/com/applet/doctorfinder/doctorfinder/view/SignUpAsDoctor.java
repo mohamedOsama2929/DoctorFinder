@@ -14,7 +14,8 @@ import butterknife.OnClick;
 
 public class SignUpAsDoctor extends AppCompatActivity {
 
-    String[] languages = { "C","C++","Java","C#","PHP","JavaScript","jQuery","AJAX","JSON" };
+    String[] city = {"Tokyo","London","Newcastle","NotingHills"};
+    String[] speciality = {"Psychiatry","Otolaryngology","Vascular","Reconstructive"};
 
     public void back(View view){
 
@@ -33,10 +34,10 @@ public class SignUpAsDoctor extends AppCompatActivity {
         final AutoCompleteTextView doctorCity = (AutoCompleteTextView) findViewById(R.id.doctorCity);
         final AutoCompleteTextView doctorArea = (AutoCompleteTextView) findViewById(R.id.doctorArea);
 
-        ArrayAdapter<String> doctorSpecialityadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, languages);
-        ArrayAdapter<String> doctorSubSpecialityadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, languages);
-        ArrayAdapter<String> doctorCityadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, languages);
-        ArrayAdapter<String> doctorAreaadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, languages);
+        ArrayAdapter<String> doctorSpecialityadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, speciality);
+        ArrayAdapter<String> doctorSubSpecialityadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, speciality);
+        ArrayAdapter<String> doctorCityadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, city);
+        ArrayAdapter<String> doctorAreaadapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, city);
 
         doctorSpeciality.setAdapter(doctorSpecialityadapter);
         doctorSubSpeciality.setAdapter(doctorSubSpecialityadapter);
