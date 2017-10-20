@@ -66,7 +66,7 @@ public class navFragment extends Fragment {
             }
         });
 
-        if (!doc)
+        if (doc)
         return doctor;
         else
             return visitor;
