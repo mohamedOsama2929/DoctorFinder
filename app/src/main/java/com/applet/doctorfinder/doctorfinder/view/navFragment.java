@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.applet.doctorfinder.doctorfinder.R;
 
@@ -60,9 +61,16 @@ public class navFragment extends Fragment {
 
                 Intent intent = new Intent(getContext(),doctorprofile.class);
                 startActivity(intent);
+            }
+        });
 
+        TextView text=(TextView) doctor.findViewById(R.id.textView);
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-
+                Intent intent = new Intent(getContext(),doctorprofile.class);
+                startActivity(intent);
             }
         });
 
