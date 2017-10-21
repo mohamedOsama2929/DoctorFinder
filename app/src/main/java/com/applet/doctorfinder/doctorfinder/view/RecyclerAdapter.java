@@ -32,8 +32,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         public TextView timeTxt;
         public TextView addressTxt;
 
-        public Button bookBtn;
-        public Button profileBtn;
+        public Button seeProfileBtn;
 
         public ViewHolder(View itemView){
 
@@ -53,8 +52,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             timeTxt = (TextView) itemView.findViewById(R.id.timeTxt);
             addressTxt = (TextView) itemView.findViewById(R.id.addressTxt);
 
-            bookBtn = (Button) itemView.findViewById(R.id.theBookBtn);
-            profileBtn = (Button) itemView.findViewById(R.id.theProfileBtn);
+            seeProfileBtn = (Button) itemView.findViewById(R.id.seeProfileBtn);
         }
     }
 

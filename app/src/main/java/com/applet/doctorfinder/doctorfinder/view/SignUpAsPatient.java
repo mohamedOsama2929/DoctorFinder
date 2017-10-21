@@ -23,6 +23,7 @@ public class SignUpAsPatient extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_as_patient);
+
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
         toolbar.setLogo(R.drawable.arrow);
         View view = toolbar.getChildAt(1);

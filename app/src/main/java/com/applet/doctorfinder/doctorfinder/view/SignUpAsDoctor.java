@@ -3,6 +3,7 @@ package com.applet.doctorfinder.doctorfinder.view;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -28,6 +29,17 @@ public class SignUpAsDoctor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_as_doctor);
+
+        Toolbar toolbar=(Toolbar)findViewById(R.id.signUpDoctorToolbar);
+        toolbar.setLogo(R.drawable.arrow);
+        View view = toolbar.getChildAt(1);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),SignUpGeneral.class);
+                startActivity(intent);
+            }
+        });
 
         final AutoCompleteTextView doctorSpeciality = (AutoCompleteTextView) findViewById(R.id.doctorSpeciality);
         final AutoCompleteTextView doctorSubSpeciality = (AutoCompleteTextView) findViewById(R.id.doctorSubSpeciality);
