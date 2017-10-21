@@ -6,7 +6,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundpatient"
     tools:context="com.applet.doctorfinder.doctorfinder.view.SignUpAsPatient">
->
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -69,8 +74,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/spinner"
         android:layout_below="@+id/editText2"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:drawableLeft="@drawable/phoneimage"
         android:drawablePadding="10dp"
@@ -81,7 +88,7 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="80dp"
+        android:layout_width="wrap_content"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/editText3"
@@ -181,8 +188,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/signbtn"
-        android:text="SIGN UP"
-        android:textColor="@android:color/white"
-        android:textSize="20dp" />
+         />
+    </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
