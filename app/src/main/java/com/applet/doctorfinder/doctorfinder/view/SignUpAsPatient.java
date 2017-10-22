@@ -45,6 +45,7 @@ public class SignUpAsPatient extends AppCompatActivity {
 
         Spinner spinner=(Spinner)findViewById(R.id.spinner);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(getApplicationContext(), R.layout.spinner_layout,data);
+        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
 }

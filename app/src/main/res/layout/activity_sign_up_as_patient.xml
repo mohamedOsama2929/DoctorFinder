@@ -96,7 +96,7 @@
         android:layout_alignStart="@+id/editText2"
         android:layout_marginLeft="15dp"
         android:ems="10"
-        android:paddingBottom="5dp">
+      >
 
     </Spinner>
     <EditText
