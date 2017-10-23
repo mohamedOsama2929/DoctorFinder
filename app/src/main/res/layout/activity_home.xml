@@ -1,226 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_home"
+    android:orientation="vertical"
     tools:context="com.applet.doctorfinder.doctorfinder.view.HomeActivity">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="0dp"
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@drawable/apperpar">
 
-            <ImageView
-                android:id="@+id/imageView"
-                style="@style/signINstyle"
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/logo" />
 
-            <FrameLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="15dp">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="Doctor Finder"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </android.support.v7.widget.Toolbar>
 
-                <TextView
-                    android:id="@+id/txt_allSpecialities"
-                    style="@style/homeButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/all_specialities"
-                    android:text="@string/all_specialities" />
+    </android.support.design.widget.AppBarLayout>
 
-                <Spinner
-                    android:id="@+id/spinner_allSpecialities"
-                    style="@style/homeButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </FrameLayout>
 
-            <FrameLayout
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_home"
+            tools:context="com.applet.doctorfinder.doctorfinder.view.HomeActivity">
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp">
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rlBottom">
 
-                <TextView
-                    android:id="@+id/txt_subSpeciality"
-                    style="@style/homeButtonStyle"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/all_specialities"
-                    android:text="@string/sub_specialities" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <Spinner
-                    android:id="@+id/spinner_subSpecialities"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </FrameLayout>
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/signINstyle"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/logo" />
 
-            <FrameLayout
+                    <AutoCompleteTextView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/auto_AllSpecial"
+                        style="@style/homeButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/clinic_name"
+                        android:hint="@string/all_specialities" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_subSpecial"
+                        style="@style/homeButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/clinic_name"
+                        android:hint="@string/sub_specialities" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_city"
+                        style="@style/homeButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/doctor_city"
+                        android:hint="@string/city" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_area"
+                        style="@style/homeButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/doctor_city"
+                        android:hint="@string/area" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_priceRange"
+                        style="@style/homeButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/fees"
+                        android:hint="@string/priceRange" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_doctor_name"
+                        style="@style/homeButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/doctor_speciality"
+                        android:hint="@string/doctor_name" />
+
+
+                    <Button
+                        android:id="@+id/btn_findDoctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button"
+                        android:onClick="searchResult"
+                        android:text="@string/find_doctor"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp">
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/down">
 
-                <TextView
-                    android:id="@+id/txt_city"
-                    style="@style/homeButtonStyle"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@drawable/cityicon"
-                    android:text="@string/city" />
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
 
-                <Spinner
-                    android:id="@+id/spinner_city"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </FrameLayout>
+                    <ImageView
+                        android:id="@+id/img_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/search" />
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Search"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
 
-                <TextView
-                    android:id="@+id/txt_area"
-                    style="@style/homeButtonStyle"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
                     android:layout_height="match_parent"
-                    android:background="@drawable/cityicon"
-                    android:text="@string/area" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayout">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/timetable" />
 
-                <Spinner
-                    android:id="@+id/spinner_area"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </FrameLayout>
+                    <TextView
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Time Table"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
 
-                <TextView
-                    android:id="@+id/txt_priceRange"
-                    style="@style/homeButtonStyle"
-                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/price_rangeicon"
-                    android:text="@string/priceRange" />
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_alignTop="@+id/linearLayout"
+                    android:layout_centerHorizontal="true">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/favourites" />
 
-                <Spinner
-                    android:id="@+id/spinner_priceRange"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </FrameLayout>
+                    <TextView
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="40dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp">
-
-
-                <TextView
-                    android:id="@+id/txt_doctorName"
-                    style="@style/homeButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/doctrname"
-                    android:text="@string/doctor_name" />
-
-                <Spinner
-                    android:id="@+id/spinner_doctorName"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </FrameLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Favorites"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
 
 
-        </LinearLayout>
-    </ScrollView>
+        <fragment
+            android:id="@+id/draw"
+            android:name="com.applet.doctorfinder.doctorfinder.view.navFragment"
+            android:layout_width="@dimen/nav_bar"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/nav_doctor"
+            tools:layout="@layout/nav_doctor"></fragment>
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="@drawable/down"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+    </android.support.v4.widget.DrawerLayout>
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/search" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/favourites" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/timetable" />
-    </RelativeLayout>
-
-    <Button
-
-        android:id="@+id/btn_findDoctor"
-        android:layout_width="202dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/button"
-        android:text="@string/find_doctor"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.909" />
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

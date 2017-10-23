@@ -22,7 +22,9 @@
         </activity>
         <activity
             android:name=".view.HomeActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+
+        </activity>
         <activity
             android:name=".view.SignUpGeneral"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
