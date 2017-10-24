@@ -20,8 +20,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 /**
  * A simple {@link Fragment} subclass.
  */
-
-
 public class navFragment extends Fragment {
 
     boolean doc=true;
@@ -31,8 +29,6 @@ public class navFragment extends Fragment {
     public navFragment() {
         // Required empty public constructor
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -46,11 +42,8 @@ public class navFragment extends Fragment {
         circleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                     Intent intent = new Intent(getContext(),doctorprofile.class);
                     startActivity(intent);
-
-
 
             }
         });
@@ -79,12 +72,9 @@ public class navFragment extends Fragment {
         else
             return visitor;
     }
-
     public void setUP(DrawerLayout drawerLayput,Toolbar toolBar) {
-
         mDrawerLayout = drawerLayput;
         mDrawerToggle=new ActionBarDrawerToggle(getActivity(),drawerLayput,toolBar,R.string.drawer_open,R.string.drawer_close){
-
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
@@ -93,8 +83,6 @@ public class navFragment extends Fragment {
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
-
-
             }
 
         };
