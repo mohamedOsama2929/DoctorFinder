@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import com.applet.doctorfinder.doctorfinder.R;
+
+import java.util.ArrayList;
 
 import butterknife.OnClick;
 
@@ -83,6 +86,19 @@ public class SignUpAsDoctor extends AppCompatActivity {
                 doctorArea.showDropDown();
             }
         });
+
+        ArrayList<String> data=new ArrayList<String>();
+        data.add("+98");
+        data.add("+49");
+        data.add("+380");
+        data.add("+39");
+        data.add("+34");
+        data.add("+54");
+
+        Spinner spinner=(Spinner)findViewById(R.id.postalCode);
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getApplicationContext(), R.layout.spinner_layout,data);
+        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
 
     }
 }
