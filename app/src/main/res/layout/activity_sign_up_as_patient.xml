@@ -70,7 +70,7 @@
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -86,19 +86,6 @@
         android:inputType="phone"
         android:textSize="20sp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        style="@style/Widget.AppCompat.Spinner.Underlined"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_marginLeft="15dp"
-        android:ems="10"
-      >
-
-    </Spinner>
     <EditText
         android:id="@+id/editText5"
         android:layout_width="match_parent"
@@ -190,7 +177,7 @@
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/signbtn"
+        android:background="@drawable/apperpar"
          />
     </RelativeLayout>
     </ScrollView>

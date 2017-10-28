@@ -71,28 +71,9 @@
                 android:textColor="#000000"
                 android:textColorHint="#A9A9A9" />
 
-            <Spinner
-                android:id="@+id/postalCode"
-                style="@style/Widget.AppCompat.Spinner.Underlined"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/mobileNumber"
-                android:layout_below="@+id/password"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="-10dp"
-                android:backgroundTint="#A9A9A9"
-                android:drawableRight="@drawable/arrow_down"
-                android:hint="+20"
-                android:inputType="number"
-                android:paddingBottom="15dp"
-                android:paddingLeft="10dp"
-                android:textColor="#000000"
-                android:textColorHint="#A9A9A9" />
-
             <EditText
                 android:id="@+id/mobileNumber"
-                android:layout_width="240dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@+id/password"

@@ -87,18 +87,5 @@ public class SignUpAsDoctor extends AppCompatActivity {
             }
         });
 
-        ArrayList<String> data=new ArrayList<String>();
-        data.add("+98");
-        data.add("+49");
-        data.add("+380");
-        data.add("+39");
-        data.add("+34");
-        data.add("+54");
-
-        Spinner spinner=(Spinner)findViewById(R.id.postalCode);
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getApplicationContext(), R.layout.spinner_layout,data);
-        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
     }
 }
